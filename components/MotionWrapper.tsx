@@ -18,7 +18,7 @@ export function MotionAnimeCard({ children, index }: MotionAnimeCardProps) {
       initial="hidden"
       animate="visible"
       transition={{
-        delay: 0.25 * index, // Use index for staggered animations
+        delay: 0.25 * (index % 8),
         ease: "easeInOut",
         duration: 0.5,
       }}
